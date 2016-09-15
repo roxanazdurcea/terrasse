@@ -7,6 +7,8 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
         <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
         <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
         <!-- Good default declaration:
@@ -19,321 +21,116 @@
         -->
         <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
+
         <!--jQuery mobile css-->
         <link href="vendor/css/laterrasse.min.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/css/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
         <!--jQuery-->
         <script src="vendor/js/jquery-1.11.0.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
         <!--jQuery mobile-->
         <script src="vendor/js/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
-        <title>Hello World</title>
+        <title>appetizers</title>
     </head>
 
     <body>
-        <!-- commit and push test -->
-        <!-- This is the first page -->
-        <section   id="appetizers01" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="c">
-                <h1>La Terrasse</h1>
+
+        <section id="appetizers" data-role="page">
+
+            <div data-role="header" data-theme="c" role="banner" class="fixed-header ui-header ui-bar-c ui-header-fixed">
+                <a style="margin-top:2%;" href="index.html#page02" rel="external" data-transition="slide" data-role="button" role="button" class="ui-icon-carat-l ui-btn-icon-left ui-btn">BACK</a>
+                <h1 class="ui-title" role="heading" aria-level="1">APPETIZERS</h1>
             </div>
 
-            <div class="ui-content" role="main">
-                <img style="width: 100%; height: auto; position: relative;" src="img/meal-01.jpg" alt=""/>
-                <img style="width: 30%; height: auto; position: absolute; left:5%; top: 10%;" src="img/laterrasse-logo.png" alt=""/>
-                <hr style="width: 30%; position: absolute; left:5%; top: 22%;">
-                <div style="position: absolute; left:5%; top: 25%;">
-                    <p class="orange-thin">Daily Menu</p>
-                    <p class="grey-thin">FRESH & TASTY</p>
-                </div>
-                <div class="flex-class" style="display: inline-block; position: absolute; left:5%; top: 45%;">
-                    <a href="index.html"><img style="float: left; zoom: 50%;" src="img/house-icon.png" alt=""/></a>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <a href="index.html#page02"><p style="float: left;">Menu</p></a>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizer 01</p>
-                </div>
-                <h1 style="position: absolute; left:5%; top: 49%; width: 40%;">Appetizer 01 long title</h1>
-                <h1 style="position: absolute; left:5%; top: 60%;"><span>$20</span></h1>
-                <p style="position: absolute; left:5%; top: 67%; width: 45%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150</p>
-                <div style="position: absolute; bottom: 10%; left: 50%;">
-                    <div style="display: inline-block;"><a style="float: left;" class="ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="#appetizers02" data-transition="slide"></a></div>
-                </div>
-            </div>
+            <img  class="top-stripe" src="img/menu-list-stripe.jpg" alt="menu-list-stripe" />
 
-            <div data-role="footer" data-position="fixed" data-theme="c">
-                <a class="ui-btn ui-shadow ui-icon-home ui-btn-icon-left" href="index.html#page02" rel="external" style="height:15px; background-color: #ccc; border:0;" data-transition="slide">&nbsp;Home</a>
-            </div>
-           
+            <div class="ui-content" role="main" style="padding-left: 0px; padding-right: 0px;">
 
-        </section> <!-- end of first page -->
-
-        <!-- This is the second page -->
-        <section  id="appetizers02" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="c">
-                <h1>LaTerrasse</h1>
-            </div>
-
-            <div class="ui-content" role="main">
-                <img style="width: 100%; height: auto; position: relative;" src="img/meal-01.jpg" alt=""/>
-                <img style="width: 30%; height: auto; position: absolute; left:5%; top: 10%;" src="img/laterrasse-logo.png" alt=""/>
-                <hr style="width: 30%; position: absolute; left:5%; top: 22%;">
-                <div style="position: absolute; left:5%; top: 25%;">
-                    <p class="orange-thin">Daily Menu</p>
-                    <p class="grey-thin">FRESH & TASTY</p>
-                </div>
-                <div class="flex-class" style="display: inline-block; position: absolute; left:5%; top: 45%;">
-                    <a href="index.html"><img style="float: left; zoom: 50%;" src="img/house-icon.png" alt=""/></a>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizers</p>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizer 02</p>
-                </div>
-                <h1 style="position: absolute; left:5%; top: 49%; width: 40%;">Appetizer 02 long title</h1>
-                <h1 style="position: absolute; left:5%; top: 60%;"><span>$20</span></h1>
-                <p style="position: absolute; left:5%; top: 67%; width: 45%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150</p>
-                <div style="position: absolute; bottom: 10%; left: 50%; display: inline-block;">
-                    <div style="display: inline-block;"><a style="float: left;" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-b" href="#appetizers01" data-transition="slide"></a>&nbsp;&nbsp;<a style="float: right;" class="ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="#appetizers03" data-transition="slide"></a></div>
-                </div>
-            </div>
-
-            <div data-role="footer" data-position="fixed" data-theme="c">
-                <a class="ui-btn ui-shadow ui-icon-home ui-btn-icon-left" href="index.html#page02" rel="external" style="height:15px; background-color: #ccc; border:0;" data-transition="slide">&nbsp;Home</a>
-            </div>
-            
-        </section> <!-- end of second page -->
-
-        <!-- This is the third page -->
-        <section  id="appetizers03" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="c">
-                <h1>LaTerrasse</h1>
-                <!--<nav data-role="navbar">
-                    <div class="ui-grid-d">
-                        <div class="ui-block-a"></div>
-                        <div class="ui-block-b"></div>
-                        <div class="ui-block-c"><a class="ui-btn ui-shadow ui-icon-home ui-btn-icon-left" href="index.html#page02" rel="external" style="height:15px; background-color: #ccc; border:0;" data-transition="slide">&nbsp;Home</a></div>
-                        <div class="ui-block-d"></div>
-                        <div class="ui-block-e"></div>
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img src="img/appetizers/stuffed-japaleno-with-cheese.png" alt="stuffed-japaleno-with-cheese" title="stuffed japaleno with cheese" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>Stuffed Jalapeno with cheese</h1>
+                                <p><p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="appetizers-list.html#appetizer01" rel="external" data-transition="slide">see more</a>
+                        </div>
                     </div>
-                </nav> -->
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img src="img/appetizers/chicken-fritters-with-mango-curry-ranch.png" alt="chicken-fritters-with-mango-curry-ranch" title="chicken fritters with mango curry ranch" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>Chicken fritters with mango curry ranch</h1>
+                                <p><p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="appetizers-list.html#appetizer02" rel="external" data-transition="slide">link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img src="img/appetizers/shrimp-popcorn-with-japanese-chili-mayo.png" alt="shrimp-popcorn-with-japanese-chili-mayo" title="shrimp popcorn with japanese chili mayo" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>Shrimp popcorn with Japanese chilly mayo</h1>
+                                <p><p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="appetizers-list.html#appetizer03" rel="external" data-transition="slide">link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img src="img/appetizers/stuffed-mushrooms-with-chili-mayo-souce.png" alt="stuffed-mushrooms-with-chili-mayo-souce" title="stuffed mushrooms with chili mayo souce" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>Stuffed mushrooms with chilli mayo sauce</h1>
+                                <p><p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="appetizers-list.html#appetizer04" rel="external" data-transition="slide">link</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="ui-content" role="main">
-                <img style="width: 100%; height: auto; position: relative;" src="img/meal-01.jpg" alt=""/>
-                <img style="width: 30%; height: auto; position: absolute; left:5%; top: 10%;" src="img/laterrasse-logo.png" alt=""/>
-                <hr style="width: 30%; position: absolute; left:5%; top: 22%;">
-                <div style="position: absolute; left:5%; top: 25%;">
-                    <p class="orange-thin">Daily Menu</p>
-                    <p class="grey-thin">FRESH & TASTY</p>
-                </div>
-                <div class="flex-class" style="display: inline-block; position: absolute; left:5%; top: 45%;">
-                    <a href="index.html"><img style="float: left; zoom: 50%;" src="img/house-icon.png" alt=""/></a>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizers</p>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizer 03</p>
-                </div>
-                <h1 style="position: absolute; left:5%; top: 49%; width: 40%;">Appetizer 03 long title</h1>
-                <h1 style="position: absolute; left:5%; top: 60%;"><span>$20</span></h1>
-                <p style="position: absolute; left:5%; top: 67%; width: 45%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150</p>
-                <div style="position: absolute; bottom: 10%; left: 50%;">
-                    <div style="display: inline-block;"><a style="float: left;" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-b" href="#appetizers02" data-transition="slide"></a>&nbsp;&nbsp;<a style="float: right;" class="ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="#appetizers04" data-transition="slide"></a></div>
-
-                </div>
-            </div>
-
-            <div data-role="footer" data-position="fixed" data-theme="c">
-                <h2>Page Content Footer</h2>
-            </div>
-           
-        </section> <!-- end of second page -->
-
-        <!-- This is the forth page -->
-        <section  id="appetizers04" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="c">
-                <h1>LaTerrasse</h1>
-                <!--                <nav data-role="navbar">
-                                    <div class="ui-grid-d">
-                                        <div class="ui-block-a"></div>
-                                        <div class="ui-block-b"></div>
-                                        <div class="ui-block-c"><a class="ui-btn ui-shadow ui-icon-home ui-btn-icon-left" href="index.html#page02" rel="external" style="height:15px; background-color: #ccc; border:0;" data-transition="slide">&nbsp;Home</a></div>
-                                        <div class="ui-block-d"></div>
-                                        <div class="ui-block-e"></div>
-                                    </div>
-                                </nav> -->
-            </div>
-
-            <div class="ui-content" role="main">
-                <img style="width: 100%; height: auto; position: relative;" src="img/meal-01.jpg" alt=""/>
-                <img style="width: 30%; height: auto; position: absolute; left:5%; top: 10%;" src="img/laterrasse-logo.png" alt=""/>
-                <hr style="width: 30%; position: absolute; left:5%; top: 22%;">
-                <div style="position: absolute; left:5%; top: 25%;">
-                    <p class="orange-thin">Daily Menu</p>
-                    <p class="grey-thin">FRESH & TASTY</p>
-                </div>
-                <div class="flex-class" style="display: inline-block; position: absolute; left:5%; top: 45%;">
-                    <a href="index.html"><img style="float: left; zoom: 50%;" src="img/house-icon.png" alt=""/></a>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizers</p>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizer 04</p>
-                </div>
-                <h1 style="position: absolute; left:5%; top: 49%; width: 40%;">Appetizer 04 long title</h1>
-                <h1 style="position: absolute; left:5%; top: 60%;"><span>$20</span></h1>
-                <p style="position: absolute; left:5%; top: 67%; width: 45%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150</p>
-                <div style="position: absolute; bottom: 10%; left: 50%;">
-                    <div style="display: inline-block;"><a style="float: left;" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-b" href="#appetizers03" data-transition="slide"></a>&nbsp;&nbsp;<a style="float: right;" class="ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="#appetizers05" data-transition="slide"></a></div>
-
-                </div>
-            </div>
-
-            <div data-role="footer" data-position="fixed" data-theme="c">
-                <h2>Page Content Footer</h2>
-            </div>
-           
-        </section> <!-- end of second page -->
-
-
-        <!-- This is the fifth page -->
-        <section  id="appetizers05" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="c">
-                <h1>LaTerrasse</h1>
-                <!--                <nav data-role="navbar">
-                                    <div class="ui-grid-d">
-                                        <div class="ui-block-a"></div>
-                                        <div class="ui-block-b"></div>
-                                        <div class="ui-block-c"><a class="ui-btn ui-shadow ui-icon-home ui-btn-icon-left" href="index.html#page02" rel="external" style="height:15px; background-color: #ccc; border:0;" data-transition="slide">&nbsp;Home</a></div>
-                                        <div class="ui-block-d"></div>
-                                        <div class="ui-block-e"></div>
-                                    </div>
-                                </nav> -->
-            </div>
-
-            <div class="ui-content" role="main">
-                <img style="width: 100%; height: auto; position: relative;" src="img/meal-01.jpg" alt=""/>
-                <img style="width: 30%; height: auto; position: absolute; left:5%; top: 10%;" src="img/laterrasse-logo.png" alt=""/>
-                <hr style="width: 30%; position: absolute; left:5%; top: 22%;">
-                <div style="position: absolute; left:5%; top: 25%;">
-                    <p class="orange-thin">Daily Menu</p>
-                    <p class="grey-thin">FRESH & TASTY</p>
-                </div>
-                <div class="flex-class" style="display: inline-block; position: absolute; left:5%; top: 45%;">
-                    <a href="index.html"><img style="float: left; zoom: 50%;" src="img/house-icon.png" alt=""/></a>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizers</p>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizer 05</p>
-                </div>
-                <h1 style="position: absolute; left:5%; top: 49%; width: 40%;">Appetizer 05 long title</h1>
-                <h1 style="position: absolute; left:5%; top: 60%;"><span>$20</span></h1>
-                <p style="position: absolute; left:5%; top: 67%; width: 45%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150</p>
-                <div style="position: absolute; bottom: 10%; left: 50%;">
-                    <div style="display: inline-block;"><a style="float: left;" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-b" href="#appetizers04" data-transition="slide"></a>&nbsp;&nbsp;<a style="float: right;" class="ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="#appetizers06" data-transition="slide"></a></div>
-
-                </div>
-            </div>
-
-            <div data-role="footer" data-position="fixed" data-theme="c">
-                <h2>Page Content Footer</h2>
-            </div>
-           
-        </section> <!-- end of second page -->
-
-        <!-- This is the fifth page -->
-        <section  id="appetizers06" data-role="page">
-            <div data-role="header" data-position="fixed" data-theme="c">
-                <h1>LaTerrasse</h1>
-                <!--                <nav data-role="navbar">
-                                    <div class="ui-grid-d">
-                                        <div class="ui-block-a"></div>
-                                        <div class="ui-block-b"></div>
-                                        <div class="ui-block-c"><a class="ui-btn ui-shadow ui-icon-home ui-btn-icon-left" href="index.html#page02" rel="external" style="height:15px; background-color: #ccc; border:0;" data-transition="slide">&nbsp;Menu</a></div>
-                                        <div class="ui-block-d"></div>
-                                        <div class="ui-block-e"></div>
-                                    </div>
-                                </nav> -->
-            </div>
-
-            <div class="ui-content" role="main">
-                <img style="width: 100%; height: auto; position: relative;" src="img/meal-01.jpg" alt=""/>
-                <img style="width: 30%; height: auto; position: absolute; left:5%; top: 10%;" src="img/laterrasse-logo.png" alt=""/>
-                <hr style="width: 30%; position: absolute; left:5%; top: 22%;">
-                <div style="position: absolute; left:5%; top: 25%;">
-                    <p class="orange-thin">Daily Menu</p>
-                    <p class="grey-thin">FRESH & TASTY</p>
-                </div>
-                <div class="flex-class" style="display: inline-block; position: absolute; left:5%; top: 45%;">
-                    <a href="index.html"><img style="float: left; zoom: 50%;" src="img/house-icon.png" alt=""/></a>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizers</p>
-                    <p style="float: left;">&nbsp;/&nbsp;</p>
-                    <p style="float: left;">Appetizer 06</p>
-                </div>
-                <h1 style="position: absolute; left:5%; top: 49%; width: 40%;">Appetizer 06 long title</h1>
-                <h1 style="position: absolute; left:5%; top: 60%;"><span>$20</span></h1>
-                <p style="position: absolute; left:5%; top: 67%; width: 45%;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 150</p>
-                <div style="position: absolute; bottom: 10%; left: 50%;">
-                    <div style="display: inline-block;"><a style="float: left;" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-b" href="#appetizers05" data-transition="slide"></a></div>
-
-                </div>
-            </div>
-
-            <div data-role="footer" data-position="fixed" data-theme="c">
-                <h2>Page Content Footer</h2>
-            </div>
-             <script>
-                $(document).on("swipeleft", "#appetizers01", function (e) {
-                    location.href = "#appetizers02";
-//                $.mobile.changePage( "appetizers.html#appetizers02", { transition: "slideup", changeHash: false });
-//                    $.mobile.changePage("#appetizers02", {transition: "slide"});
-                });
+            <img class="bottom-stripe" src="img/menu-list-stripe.jpg" alt="menu-list-stripe" />
             
-                $(document).on("swiperight", "#appetizers02", function (e) {
-                    location.href = "#appetizers01";
-//                $.mobile.changePage( "appetizers.html#appetizers01", { transition: "slideup", changeHash: false });
-//                    $.mobile.changePage("#appetizers01", {transition: "slide", reverse: true});
-                });
-                $(document).on("swipeleft", "#appetizers02", function (e) {
-                    location.href = "#appetizers03";
-//                    $.mobile.changePage("#appetizers03", {transition: "slide"});
-                });
-            
-                $(document).on("swiperight", "#appetizers03", function (e) {
-                    location.href = "#appetizers02";
-//                    $.mobile.changePage("#appetizers02", {transition: "slide", reverse: true});
-                });
-                $(document).on("swipeleft", "#appetizers03", function (e) {
-                    location.href = "#appetizers04";
-//                    $.mobile.changePage("#appetizers04", {transition: "slide"});
-                });
-            
-                $(document).on("swiperight", "#appetizers04", function (e) {
-                    location.href = "#appetizers03";
-//                    $.mobile.changePage("#appetizers03", {transition: "slide", reverse: true});
-                });
-                $(document).on("swipeleft", "#appetizers04", function (e) {
-                    location.href = "#appetizers05";
-//                    $.mobile.changePage("#appetizers05", {transition: "slide"});
-                });
+            <div data-role="footer" data-theme="c" class="fixed-footer ui-footer ui-bar-c ui-footer-fixed">
+                <a class="ui-btn  ui-icon-home ui-btn-icon-left" href="index.html#page01" rel="external" data-transition="slide">HOME</a>
+                <a class="ui-btn  ui-icon-bars ui-btn-icon-left" href="index.html#page02" rel="external" data-transition="slide">MENU</a>
+            </div>
 
-                $(document).on("swiperight", "#appetizers05", function (e) {
-                    location.href = "#appetizers04";
-//                    $.mobile.changePage("#appetizers04", {transition: "slide", reverse: true});
-                });
-                $(document).on("swipeleft", "#appetizers05", function (e) {
-                    location.href = "#appetizers06";
-//                    $.mobile.changePage("#appetizers06", {transition: "slide"});
-                });
-            </script>
-            <script>
+        </section> 
 
-                $(document).on("swiperight", "#appetizers06", function (e) {
-                    location.href = "#appetizers05";
-//                    $.mobile.changePage("#appetizers05", {transition: "slide", reverse: trues});
-                });
+        <script>
+            $(window).resize(function () {
 
-            </script>
-        </section> <!-- end of second page -->
+                function autoHeight() {
+                    var h = $('.thumb-prod-img img').height();
+                    $('.menu-list-btn').height(h);
+                    $('.menu-name-background').height(h);
+                    $('.cat-page-item-description').height(h);
+                }
+                autoHeight();
+            });
+        </script> 
+        
     </body>
-
 </html>

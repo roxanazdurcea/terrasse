@@ -36,7 +36,7 @@
 
   * **StatusBarOverlaysWebView** (Boolean, der Standardwert ist True). Stellen Sie auf iOS 7 die Statusbar-Overlay oder keine Überlagerung der WebView beim Start.
     
-        <preference name="StatusBarOverlaysWebView" value="true" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
         
 
   * **StatusBarBackgroundColor** (Farbe hex String, Standardwert ist #000000). Auf iOS legen 7 und Android 5, Sie die Hintergrundfarbe der Statusbar von eine hexadezimale Zeichenfolge (#RRGGBB) beim Start.

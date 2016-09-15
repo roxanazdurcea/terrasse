@@ -49,7 +49,7 @@ Preferences
 
 -  __StatusBarOverlaysWebView__ (boolean, defaults to true). On iOS 7, make the statusbar overlay or not overlay the WebView at startup.
 
-        <preference name="StatusBarOverlaysWebView" value="true" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
 
 - __StatusBarBackgroundColor__ (color hex string, no default value). On iOS 7, set the background color of the statusbar by a hex string (#RRGGBB) at startup. If this value is not set, the background color will be transparent.
 

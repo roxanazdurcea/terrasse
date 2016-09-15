@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+        <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+        <!-- Good default declaration:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+            * Enable eval(): add 'unsafe-eval' to default-src
+        * Create your own at http://cspisawesome.com
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+
+        <!--jQuery mobile css-->
+        <link href="vendor/css/laterrasse.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/css/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/css/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <!--jQuery-->
+        <script src="vendor/js/jquery-1.11.0.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+        <!--jQuery mobile-->
+        <script src="vendor/js/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
+
+        <title>warm sandwiches</title>
+    </head>
+
+    <body>
+
+        <section id="warm-sandwiches" data-role="page">
+
+            <div data-role="header" data-theme="c" role="banner" class="fixed-header ui-header ui-bar-c ui-header-fixed">
+                <a style="margin-top:2%;" href="index.html#page02" rel="external" data-transition="slide" data-role="button" role="button" class="ui-icon-carat-l ui-btn-icon-left ui-btn">BACK</a>
+                <h1 class="ui-title" role="heading" aria-level="1">WARM SANDWICHES</h1>
+            </div>
+
+            <img  class="top-stripe" src="img/menu-list-stripe.jpg" alt="menu-list-stripe" />
+
+            <div class="ui-content" role="main" style="padding-left: 0px; padding-right: 0px;">
+
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img src="img/warm-sandwiches/philly-cheese-steak-sandwich.png" alt="philly-cheese-steak-sandwich" title="philly cheese steak sandwich" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>Philly cheese steak sandwich </h1>
+                                <p>grilled tenderloin meat with swiss emantal cheese, caramelized onion and bell pepper served in a soft baguette with side french fries <p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="warm-sandwiches-list.html#warmsandwiches01" rel="external" data-transition="slide">link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img  src="img/warm-sandwiches/breaded-chicken-sandwich.png" alt="breaded-chicken-sandwich" title="breaded chicken sandwich" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>Breaded chicken sandwich </h1>
+                                <p>fried breaded chicken fillet with spicy ranch sauce served in a soft baguette and side french fries  <p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="warm-sandwiches-list.html#warmsandwiches02" rel="external" data-transition="slide">link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img  src="img/warm-sandwiches/chicken-stroganoff-sandwich.png" alt="chicken-stroganoff-sandwich" title="chicken stroganoff sandwich" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>Chicken stroganoff </h1>
+                                <p>grilled chicken with parmesan cheese, sauteed mushrooms and creamy sauce served in a soft baguette and side french fries <p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="warm-sandwiches-list.html#warmsandwiches03" rel="external" data-transition="slide">link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img  src="img/warm-sandwiches/grilled-halloumi.png" alt="grilled-halloumi" title="grilled halloumi" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>Grilled halloumi </h1>
+                                <p>grilled halloumi cheese with cherry tomatoes, mint, green and black olives and chopped parsley and thyme served in a soft baguette and side french fries <p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="warm-sandwiches-list.html#warmsandwiches04" rel="external" data-transition="slide">link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="stripe-space">
+                        <div class="menu-name-background">
+                            <div class="thumb-prod-img">
+                                <img  src="img/warm-sandwiches/La-Terrase-club-sandwich.png" alt="La-Terrase-club-sandwich" title="La Terrase club sandwich" />
+                            </div>
+                            <div class="cat-page-item-description">
+                                <h1>La Terrasse club sandwich</h1>
+                                <p>marinated chicken breast, boiled eggs, lettuce, tomatoes, bacon and avocado served in a white toast bread with side french fries <p>
+                            </div>
+                            <a data-role="button" class="menu-list-btn ui-btn ui-icon-carat-r ui-btn-icon-notext ui-btn-b" href="warm-sandwiches-list.html#warmsandwiches05" rel="external" data-transition="slide">link</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <img class="bottom-stripe" src="img/menu-list-stripe.jpg" alt="menu-list-stripe" />
+
+            <div data-role="footer" data-theme="c" class="fixed-footer ui-footer ui-bar-c ui-footer-fixed">
+                <a class="ui-btn ui-shadow ui-icon-home ui-btn-icon-left" href="index.html#page01" rel="external" data-transition="slide">&nbsp;HOME</a>
+                <a class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-left" href="index.html#page02" rel="external" data-transition="slide">&nbsp;MENU</a>
+            </div>
+
+        </section> 
+
+
+        <script>
+
+//            $(document).ready(function () {
+//
+//                function autoHeight() {
+//                    var h = $('.thumb-prod-img img').height();
+//                    $('.menu-list-btn').height(h);
+//                    $('.menu-name-background').height(h);
+//                    $('.cat-page-item-description').height(h);
+//                }
+//                autoHeight();
+//            });
+            $(window).resize(function () {
+
+                function autoHeight() {
+                    var h = $('.thumb-prod-img img').height();
+                    $('.menu-list-btn').height(h);
+                    $('.menu-name-background').height(h);
+                    $('.cat-page-item-description').height(h);
+                }
+                autoHeight();
+            });
+        </script> 
+
+    </body>
+</html>
+
+
