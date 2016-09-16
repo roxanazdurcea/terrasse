@@ -7,8 +7,8 @@
         <param name="browser-package" value="Device" />
     </feature>
     <name>La Terrasse</name>
-    <description>Hello World sample application that responds to the deviceready event.</description>
-    <author email="support@phonegap.com" href="http://phonegap.com">PhoneGap Team</author>
+    <description>La Terrasse menu</description>
+    <author email="support@phonegap.com" href="http://phonegap.com">BMBC Team</author>
     <content src="index.html" />
     <icon src="icon.png" />
     <access origin="*" />
